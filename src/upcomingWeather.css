@@ -1,0 +1,32 @@
+.upcoming-weather{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.day {
+    border-left: 1px solid white;
+    padding-left: 10px;
+}
+
+.day:first-child {
+    border-left: none;
+}
+
+@media only screen and (max-width: 920px) {
+    .upcoming-weather{
+        flex-direction: column;
+    }
+    .day {
+        border-top: 1px solid white;
+        padding-top: 10px;
+        border-left: none;  
+        text-align: left;
+        display: flex;
+        justify-content: space-around;
+    }
+    .day:first-child {
+        border-top: none;
+    }
+    }

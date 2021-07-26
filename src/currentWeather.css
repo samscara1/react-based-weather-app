@@ -1,0 +1,49 @@
+
+.current-weather-wrapper {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    padding: 5% 0; 
+    border-bottom: 1px solid white;
+}
+.current-weather__country {
+    background-color: tomato;
+    padding: 1px;
+    border: 1px solid tomato;
+    border-radius: 5px;
+    font-size:10px;
+}
+
+.current-weather__right-column{
+    text-align: left;
+    border-left: 1px solid white;
+    padding-left: 5%;
+    margin-right: -5%;
+    line-height: 1.8;
+}
+
+.current-weather__left-column{
+    text-align: right;
+    padding-right: 5%;
+}
+
+@media only screen and (max-width: 920px) {
+    * {
+        font-size: xx-large;
+    }
+    
+    .current-weather-wrapper{
+        flex-direction: column;
+        justify-content: start;
+    }
+    .current-weather__right-column{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    .current-weather__left-column{
+        padding: 0;
+        text-align: center;
+    }
+}
